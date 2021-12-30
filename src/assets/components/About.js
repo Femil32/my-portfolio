@@ -10,9 +10,9 @@ function About() {
                 <h2>ALLOW ME TO INTRODUCE.</h2>
             </div>
             <div className='relative flex justify-between items-start py-16 gap-[12rem]'>
-                <div class='text-left'>
-                    <h4 class='text-5xl mb-2'>HELLO,</h4>
-                    <p class='text-2xl max-w-md font-[Poppins]'>
+                <div className='text-left'>
+                    <h4 className='text-5xl mb-2'>HELLO,</h4>
+                    <h1 className='text-2xl max-w-md font-[Poppins]'>
                         I am
                         <p className='inline-block mx-3 '>
                             <span className='px-1'>&#10533;</span>
@@ -21,7 +21,7 @@ function About() {
                         </p>
                         front-end developer, located in Gujarat, India. <br /> I work as a freelance
                         with companies, agencies and individuals.
-                    </p>
+                    </h1>
                 </div>
                 <div className=' w-[22rem] h-auto overflow-hidden rounded-md my-shadow -mt-[4rem]'>
                     <img className='w-full h-full' src={MyPhoto} alt='MyPhoto' />

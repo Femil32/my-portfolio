@@ -1,4 +1,5 @@
-import { projectData } from '../../data/projectData'
+import { Link } from 'react-router-dom'
+import { projectData } from '../../../data/projectData'
 
 function Projects() {
     return (
@@ -10,8 +11,15 @@ function Projects() {
                 <h2>DISCOVER MY LATEST PROJECTS.</h2>
             </div>
             <div className='flex justify-center items-center flex-col py-16 gap-[12rem]'>
-                {projectData.map((data, inde) => (
-                    <div className='flex flex-col '>
+                {projectData.map((data, index) => (
+                    <Link
+                        className='flex flex-col'
+                        key={index}
+                        to={{
+                            pathname: `/project/${data.link}`,
+                            state: ' { fromDashboard: true }',
+                        }}
+                    >
                         <div className='mb-5 w-[900px]'>
                             <img src={data.imgPath} alt='' />
                         </div>
@@ -21,7 +29,7 @@ function Projects() {
                             </h2>
                             <p className='text-2xl font-[400]'>{data.role}</p>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>

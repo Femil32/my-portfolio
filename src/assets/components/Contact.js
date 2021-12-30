@@ -4,7 +4,7 @@ function Contact() {
             className='relative min-h-screen bg-secondary text-primary flex justify-center items-center'
             id='contact'
         >
-            <div className='flex flex-col'>
+            <div className='flex flex-col text-center'>
                 <a href='mailto:femilsavaliya555@gmail.com' className='text-7xl'>
                     femilsavaliya555@gmail.com
                 </a>

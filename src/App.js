@@ -1,15 +1,22 @@
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+
+// Styles
 import './App.css'
 import './assets/scss/main.scss'
 
-import Header from '../src/assets/components/Header'
+// Components
 import LandingPage from './assets/components/LandingPage'
+import ProjectPage from './assets/components/project/ProjectPage'
 
 function App() {
     return (
-        <div className='App relative'>
-            <Header />
-            <LandingPage />
-        </div>
+        <main>
+            <Routes>
+                <Route exact path='/' element={<LandingPage />} />
+                <Route exact path='/project/:name' element={<ProjectPage />} />
+            </Routes>
+        </main>
     )
 }
 
