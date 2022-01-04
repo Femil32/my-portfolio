@@ -3,31 +3,34 @@ import { projectData } from '../../../data/projectData'
 
 function Projects() {
     return (
-        <div className='bg-secondary text-primary py-[6rem] px-[12rem] min-h-screen' id='work'>
+        <div
+            className='bg-secondary text-primary py-[20vh] px-[2vw] min-h-screen md:py-[20vh] md:px-[2vw]'
+            id='work'
+        >
             <div
-                className='text-7xl max-w-3xl text-left font-[600]'
-                style={{ wordSpacing: '20px' }}
+                className='text-[10vw] max-w-[80vw] text-left font-[600] leading-[12vw] md:text-[7vw] md:leading-[8vw]'
+                // style={{ wordSpacing: '18px' }}
             >
-                <h2>DISCOVER MY LATEST PROJECTS.</h2>
+                <p>DISCOVER MY LATEST PROJECTS.</p>
             </div>
-            <div className='flex justify-center items-center flex-col py-16 gap-[12rem]'>
+            <div className='flex justify-center items-center flex-col pt-[15vh] md:pt-[20vh] gap-[20vh] md:gap-[25vh]'>
                 {projectData.map((data, index) => (
                     <Link
-                        className='flex flex-col'
+                        className='flex flex-col justify-center items-center w-[90vw] md:w-[80vw]'
                         key={index}
                         to={{
                             pathname: `/project/${data.link}`,
                             state: ' { fromDashboard: true }',
                         }}
                     >
-                        <div className='mb-5 w-[900px]'>
+                        <div className='flex justify-center items-center mb-3 w-full md:mb-5'>
                             <img src={data.imgPath} alt='' />
                         </div>
-                        <div className='flex justify-between items-center'>
-                            <h2 className='text-5xl font-[500]'>
+                        <div className='flex justify-between items-center w-full'>
+                            <h2 className='text-[7vw] font-[500] md:text-[5vw]'>
                                 /{data.id} {data.name}
                             </h2>
-                            <p className='text-2xl font-[400]'>{data.role}</p>
+                            <p className='text-[4vw] font-[400] md:text-[2vw]'>{data.role}</p>
                         </div>
                     </Link>
                 ))}

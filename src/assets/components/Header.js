@@ -2,7 +2,7 @@ function Header() {
     return (
         <>
             <nav className='font-medium'>
-                <ul className='text-xl uppercase flex justify-between items-center px-12 pt-8 tracking-wide'>
+                <ul className='text-[3vw] uppercase flex justify-between items-center px-[2vw] pt-8 tracking-wide md:gap-[1rem] md:text-[2vw]'>
                     <li className=''>
                         <a
                             data-link=''
@@ -13,7 +13,7 @@ function Header() {
                             <span>Savaliya</span>
                         </a>
                     </li>
-                    <li className='max-w-2xl w-full flex justify-between items-center'>
+                    <li className='flex justify-between items-center gap-[3vw] md:gap-[5vw]'>
                         <a className='tracking-wide' href='#work'>
                             PROJECTS
                         </a>

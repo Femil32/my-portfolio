@@ -1,4 +1,4 @@
-import MyPhoto from '../img/photo.JPG'
+import MyPhoto from '../img/photo.png'
 
 function About() {
     return (
@@ -23,7 +23,7 @@ function About() {
                         with companies, agencies and individuals.
                     </h1>
                 </div>
-                <div className=' w-[22rem] h-auto overflow-hidden rounded-md my-shadow -mt-[4rem]'>
+                <div className=' w-[20rem] h-auto overflow-hidden rounded-md -mt-[8rem]'>
                     <img className='w-full h-full' src={MyPhoto} alt='MyPhoto' />
                 </div>
             </div>
