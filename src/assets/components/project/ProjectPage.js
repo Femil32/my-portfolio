@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { projectData } from '../../../data/projectData'
 
 function ProjectPage() {
@@ -9,7 +9,7 @@ function ProjectPage() {
     // console.log(params.name)
     return (
         <div className='bg-secondary text-primary min-h-screen relative'>
-            <div className='absolute top-12 right-8 w-16'>
+            <Link to={{ pathname: '/' }} className='absolute top-12 right-8 w-16'>
                 <svg
                     viewBox='0 0 48 48'
                     fill='none'
@@ -33,7 +33,7 @@ function ProjectPage() {
                         fill='#242424'
                     ></path>
                 </svg>
-            </div>
+            </Link>
             <div className='flex justify-center items-center flex-col min-h-full py-36 max-w-[1150px] mx-auto'>
                 {projectData.map(
                     (data, index) =>

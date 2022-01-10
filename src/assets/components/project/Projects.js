@@ -4,7 +4,7 @@ import { projectData } from '../../../data/projectData'
 function Projects() {
     return (
         <div
-            className='bg-secondary text-primary py-[20vh] px-[2vw] min-h-screen md:py-[20vh] md:px-[2vw]'
+            className='bg-secondary text-primary py-[20vh] px-[6vw] min-h-screen md:py-[20vh] md:px-[2vw]'
             id='work'
         >
             <div

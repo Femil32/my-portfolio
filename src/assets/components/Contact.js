@@ -5,10 +5,13 @@ function Contact() {
             id='contact'
         >
             <div className='flex flex-col text-center'>
-                <a href='mailto:femilsavaliya555@gmail.com' className='text-7xl'>
+                <a
+                    href='mailto:femilsavaliya555@gmail.com'
+                    className='text-[6vw] md:text-7xl transform scale-110'
+                >
                     femilsavaliya555@gmail.com
                 </a>
-                <span className='inline-block text-green-400 tracking-wide font-[400]'>
+                <span className='inline-block text-green-400 tracking-wide font-[400] mt-2'>
                     AVAILABLE NOW
                 </span>
             </div>
